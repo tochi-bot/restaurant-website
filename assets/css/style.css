@@ -1,0 +1,189 @@
+header {
+    color: rgb(165, 75, 42);
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    ;
+    box-shadow: 0 2px 2px;
+    color: white;
+}
+
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about {
+    color: blue;
+    align-content: space-between;
+}
+
+#contact {
+    color: indianred;
+}
+
+#menu {
+    color: red
+}
+
+/* style sign-p*/
+.sign-up {
+    text-decoration: none;
+}
+
+/* style for the footer*/
+footer {
+    color: black;
+    font-weight: bold;
+    background-size: auto auto;
+}
+
+/* style for the search input*/
+.search-input {
+    margin-right: 10px;
+}
+
+p {
+    text-transform: none;
+}
+
+/* navbar style with a dropdown toggle */
+nav {
+    position: absolute;
+    width: 10%;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px;
+    color: white;
+    display: none;
+    top: 100%;
+}
+
+/* nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+/* Hide check-box*/
+#nav-toggle {
+    display: none;
+}
+
+/* style class="nav-toggle-label" */
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Add style on the lists*/
+/*  Removes the bullets. A navigation bar does not need list markers
+Set margin: 0; and padding: 0; to remove browser default settings*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* add display: block; to Display the links as block elements which makes the whole link area clickable*/
+li a {
+    display: block;
+    background-color: #dddddd;
+}
+
+/* Keek left the navigation links and add a border to the navigation bar.*/
+
+li {
+    text-align: left;
+    border-bottom: 1px solid #555;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* Add an "active" class to the current link to let the user know which page he/she is on:*/
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Creat a horizontal navigation bar using float for the <li> elements, and specify a layout for the navigation links:*/
+
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+
+}
+
+section>p {
+    color: chocolate;
+}
+
+/* Change the link color on hover */
+a:hover {
+    text-decoration: none;
+    color: rgb(106, 68, 30);
+}
+
+
+footer {
+    background-color: #6f4e37;
+    padding: 1em;
+    text-align: center;
+}
+
+/* 
+		Add a child selector to this css declaration to target only 
+		<span> elements that are children of the <footer> 
+		*/
+footer>span {
+    color: silver;
+}
+
+/* 
+		Add a child selector this css declaration to target only 
+		<a> elements that are children of the <footer> 
+		*/
+footer>a {
+    color: beige;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+/* 
+		Add a child selector this css declaration to target only 
+		<p> elements that are children of the <footer> 
+		*/
+footer>p {
+    color: silver;
+}
+
+/* add purple color to h3 inside the unorder list*/
+
+ul li h3 {
+    color: purple;
+}
+
+/* media query: tables and larger screens (700 and above)*/
+@media screen and(min-width:768px) {
+
+    /*header*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+}
