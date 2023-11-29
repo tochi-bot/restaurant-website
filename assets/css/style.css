@@ -5,246 +5,254 @@ header {
     justify-content: space-between;
     align-items: baseline;
     flex-direction: row;
-    position: fixed;
+    position: relative;
+    top: 20%;
     z-index: 99;
     width: 100%;
     ;
     box-shadow: 0 2px 2px;
-    color: white;
+    color: black
+}
 }
 
 body {
-    background-color: beige;
+    background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
-}
+    overflow: auto;
+    font-family: 'Open Sans', sans-serif;
 
-#about {
-    color: blue;
-    align-content: space-between;
-}
+    #about {
+        color: blue;
+        align-content: space-between;
+    }
 
-#contact {
-    color: indianred;
-}
+    #contact {
+        color: indianred;
+    }
 
-#menu {
-    color: red
-}
+    #menu {
+        color: red
+    }
 
-/* style sign-p*/
-.sign-up {
-    text-decoration: none;
-}
 
-/* style for the footer*/
-footer {
-    color: black;
-    font-weight: bold;
-    background-size: auto auto;
-}
+    /* style for the footer*/
+    footer {
+        color: black;
+        font-weight: bold;
+        background-size: auto auto;
+        max-width: 100%;
+        width: 95%;
 
-/* style for the search input*/
-.search-input {
-    margin-right: 10px;
-}
+    }
 
-p {
-    text-transform: none;
-}
+    /* style for the search input*/
+    .search-input {
+        margin-right: 10px;
+    }
 
-/* navbar style with a dropdown toggle */
-nav {
-    position: absolute;
-    width: 10%;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px;
-    color: white;
-    display: none;
-    top: 100%;
-}
+    p {
+        text-transform: none;
+    }
 
-/* nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
-}
+    /* navbar style with a dropdown toggle */
+    nav {
+        position: absolute;
+        width: 10%;
+        padding: 0 1rem;
+        box-shadow: 0 2px 2px;
+        color: white;
+        display: none;
+        top: 100%;
+    }
 
-/* Hide check-box*/
-#nav-toggle {
-    display: none;
-}
+    /* nav toggle */
+    #nav-toggle:checked~nav {
+        display: block;
+    }
 
-/* style class="nav-toggle-label" */
-.nav-toggle-label {
-    font-size: 2rem;
-}
+    /* Hide check-box*/
+    #nav-toggle {
+        display: none;
+    }
 
-/* Add style on the lists*/
-/*  Removes the bullets. A navigation bar does not need list markers
+    /* style class="nav-toggle-label" */
+    .nav-toggle-label {
+        font-size: 2rem;
+    }
+
+    /* Add style on the lists*/
+    /*  Removes the bullets. A navigation bar does not need list markers
 Set margin: 0; and padding: 0; to remove browser default settings*/
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-/* add display: block; to Display the links as block elements which makes the whole link area clickable*/
-li a {
-    display: block;
-    background-color: #dddddd;
-}
+    /* add display: block; to Display the links as block elements which makes the whole link area clickable*/
+    li a {
+        display: block;
+        background-color: #dddddd;
+    }
 
-/* Keek left the navigation links and add a border to the navigation bar.*/
+    /* Keek left the navigation links and add a border to the navigation bar.*/
 
-li {
-    text-align: left;
-    border-bottom: 1px solid #555;
-}
+    li {
+        text-align: left;
+        border-bottom: 1px solid #555;
+        text-decoration: none;
+    }
 
-li:last-child {
-    border-bottom: none;
-}
+    li:last-child {
+        border-bottom: none;
+    }
 
-/* Add an "active" class to the current link to let the user know which page he/she is on:*/
-li a.active {
-    background-color: #04AA6D;
-    color: white;
-}
+    /* Add an "active" class to the current link to let the user know which page he/she is on:*/
+    li a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
 
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
+    li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
 
-/* Creat a horizontal navigation bar using float for the <li> elements, and specify a layout for the navigation links:*/
-
-
-li a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-
-}
-
-section>p {
-    color: chocolate;
-}
-
-/* Change the link color on hover */
-a:hover {
-    text-decoration: none;
-    color: rgb(106, 68, 30);
-}
+    /* Creat a horizontal navigation bar using float for the <li> elements, and specify a layout for the navigation links:*/
 
 
-footer {
-    background-color: #6f4e37;
-    padding: 1em;
-    text-align: center;
-}
+    li a {
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
 
-/* 
+    }
+
+    section>p {
+        color: chocolate;
+    }
+
+    /* Change the link color on hover */
+    a:hover {
+        text-decoration: none;
+        color: rgb(106, 68, 30);
+        display: flex;
+    }
+
+
+    footer {
+        background-color: #6f4e37;
+        padding: 1em;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    /* 
 		Add a child selector to this css declaration to target only 
 		<span> elements that are children of the <footer> 
 		*/
-footer>span {
-    color: silver;
-}
+    footer>span {
+        color: silver;
+    }
 
-/* 
+    /* 
 		Add a child selector this css declaration to target only 
 		<a> elements that are children of the <footer> 
 		*/
-footer>a {
-    color: beige;
-    text-decoration: none;
-    padding: 0 15px;
-}
+    footer>a {
+        color: beige;
+        text-decoration: none;
+        padding: 0 15px;
+    }
 
-/* 
+    /* 
 		Add a child selector this css declaration to target only 
 		<p> elements that are children of the <footer> 
 		*/
-footer>p {
-    color: silver;
-}
-
-/* add purple color to h3 inside the unorder list*/
-
-ul li h3 {
-    color: purple;
-}
-
-/* media query: tables and larger screens (700 and above)*/
-@media screen and(min-width:768px) {
-
-    /*header*/
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
+    footer>p {
+        color: silver;
     }
 
-}
+    /* add purple color to h3 inside the unorder list*/
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
+    ul li h3 {
+        color: purple;
+    }
 
-td {
-    border: none;
-    padding: 8px;
-    text-align: center;
-}
+    /* media query: tables and larger screens (700 and above)*/
+    @media screen and(min-width:768px) {
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+        /*header*/
+        nav {
+            display: block;
+            position: relative;
+            box-shadow: none;
+            width: fit-content;
+            padding-right: 1rem;
+        }
+
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    td {
+        border: none;
+        padding: 8px;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
 
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    overflow: hidden;
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        overflow: hidden;
 
-}
+    }
 
-.bestnobisworld {
-    float: left;
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
+    .bestnobisworld {
+        float: left;
+        width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
 
-}
+    }
 
-.bestnobisworld img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+    .bestnobisworld img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 
-.bestnobisworld p {
-    color: #333;
-    /* Set your desired text color */
-    line-height: 1.8;
-    align-items: center;
-    display: flex;
+    .bestnobisworld p {
+        color: #333;
+        /* Set your desired text color */
+        line-height: 1.8;
+        align-items: center;
+        display: flex;
 
-}
+    }
 
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    /* Bold */
-}
+    h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        /* Bold */
+    }
 
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    /* Regular */
-}
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        /* Regular */
+    }
