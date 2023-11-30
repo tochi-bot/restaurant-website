@@ -1,3 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: lato, sans-serif;
+    font-weight: 300;
+    background-color: whitesmoke;
+    color: #3a3a3a;
+    overflow: auto;
+}
+
+/* heading and company logo*/
+h1,
+h2 {
+    font-family: oswald, sans-serif;
+    /* set h1,h2 to uppercase*/
+    text-transform: uppercase;
+    /* set letter spacing*/
+    letter-spacing: 5px;
+    color: rgb(165, 75, 42);
+    text-align: center;
+}
+
+/* style logo*/
+#logo {
+    float: left;
+    /* add font size to logo*/
+    font-size: 250%;
+}
+
+/* style Navigation links*/
+#nav-menu {
+    font-size: 110%;
+    letter-spacing: 5px;
+}
+
+/* set a matching line height for nav-menu and logo*/
+#nav-menu,
+#logo {
+    line-height: 75px;
+}
+
+/* style lists to float to the right*/
+#nav-menu li {
+    float: right;
+    /* Remove bullet points from the list*/
+    list-style-type: none;
+    /* give space between the list items*/
+    margin-right: 15px;
+}
+
+/* styling the <a> */
+#nav-menu a {
+    text-decoration: none;
+    color: rgb(165, 75, 42);
+
+}
+
+#nav-menu a: {
+    border-bottom: solid #3a3a3a;
+}
+
+.active {
+    border-bottom: solid #3a3a3a;
+}
+
+/*style nobis image*/
+#nobis-image {
+    height: 300px;
+    width: 100%;
+}
+
+/* style cover-text*/
+#cover-text,
+#cover-text h2 {
+    color: #fff;
+
+}
+
+#cover-text {
+    font-size: 125%;
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    width: 300px;
+    height: 200px;
+    padding-top: 38px;
+    padding-left: 15px;
+    background-color: red;
+
+    bottom: 35px;
+    right: 150px;
+    position: absolute;
+}
+
 header {
     color: rgb(165, 75, 42);
     padding: 0 1em;
@@ -13,246 +114,159 @@ header {
     box-shadow: 0 2px 2px;
     color: black
 }
+
+p {
+    font-family: oswald, sans-serif;
+    font-weight: 300;
+    font-size: 110%;
+    display: flex;
 }
 
-body {
-    background-color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: auto;
-    font-family: 'Open Sans', sans-serif;
+/* add display: block; to Display the links as block elements which makes the whole link area clickable*/
+li a {
+    display: block;
+    background-color: #dddddd;
+}
 
-    #about {
-        color: blue;
-        align-content: space-between;
-    }
+/* Keek left the navigation links and add a border to the navigation bar.*/
 
-    #contact {
-        color: indianred;
-    }
+li {
+    text-align: left;
+    border-bottom: 1px solid #555;
+    text-decoration: none;
+}
 
-    #menu {
-        color: red
-    }
+li:last-child {
+    border-bottom: none;
+}
+
+/* Add an "active" class to the current link to let the user know which page he/she is on:*/
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Creat a horizontal navigation bar using float for the <li> elements, and specify a layout for the navigation links:*/
 
 
-    /* style for the footer*/
-    footer {
-        color: black;
-        font-weight: bold;
-        background-size: auto auto;
-        max-width: 100%;
-        width: 95%;
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
 
-    }
+}
 
-    /* style for the search input*/
-    .search-input {
-        margin-right: 10px;
-    }
+section>p {
+    color: chocolate;
+}
 
-    p {
-        text-transform: none;
-    }
+/* Change the link color on hover */
+a:hover {
+    text-decoration: none;
+    color: rgb(106, 68, 30);
+    display: flex;
+}
 
-    /* navbar style with a dropdown toggle */
+
+
+footer {
+    height: 150px;
+    position: relative;
+
+
+}
+
+.social-sites {
+    text-align: center;
+}
+
+.social-sites>li {
+    display: inline;
+}
+
+.social-sites i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: chocolate;
+}
+
+
+/* media query: tables and larger screens (700 and above)*/
+@media screen and(min-width:768px) {
+
+    /*header*/
     nav {
-        position: absolute;
-        width: 10%;
-        padding: 0 1rem;
-        box-shadow: 0 2px 2px;
-        color: white;
-        display: none;
-        top: 100%;
-    }
-
-    /* nav toggle */
-    #nav-toggle:checked~nav {
         display: block;
-    }
-
-    /* Hide check-box*/
-    #nav-toggle {
-        display: none;
-    }
-
-    /* style class="nav-toggle-label" */
-    .nav-toggle-label {
-        font-size: 2rem;
-    }
-
-    /* Add style on the lists*/
-    /*  Removes the bullets. A navigation bar does not need list markers
-Set margin: 0; and padding: 0; to remove browser default settings*/
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* add display: block; to Display the links as block elements which makes the whole link area clickable*/
-    li a {
-        display: block;
-        background-color: #dddddd;
-    }
-
-    /* Keek left the navigation links and add a border to the navigation bar.*/
-
-    li {
-        text-align: left;
-        border-bottom: 1px solid #555;
-        text-decoration: none;
-    }
-
-    li:last-child {
-        border-bottom: none;
-    }
-
-    /* Add an "active" class to the current link to let the user know which page he/she is on:*/
-    li a.active {
-        background-color: #04AA6D;
-        color: white;
-    }
-
-    li a:hover:not(.active) {
-        background-color: #555;
-        color: white;
-    }
-
-    /* Creat a horizontal navigation bar using float for the <li> elements, and specify a layout for the navigation links:*/
-
-
-    li a {
-        display: block;
-        padding: 8px;
-        background-color: #dddddd;
-
-    }
-
-    section>p {
-        color: chocolate;
-    }
-
-    /* Change the link color on hover */
-    a:hover {
-        text-decoration: none;
-        color: rgb(106, 68, 30);
-        display: flex;
-    }
-
-
-    footer {
-        background-color: #6f4e37;
-        padding: 1em;
-        text-align: center;
         position: relative;
-        bottom: 0;
-        right: 0;
-        width: 100%;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
     }
 
-    /* 
-		Add a child selector to this css declaration to target only 
-		<span> elements that are children of the <footer> 
-		*/
-    footer>span {
-        color: silver;
-    }
+}
 
-    /* 
-		Add a child selector this css declaration to target only 
-		<a> elements that are children of the <footer> 
-		*/
-    footer>a {
-        color: beige;
-        text-decoration: none;
-        padding: 0 15px;
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
-    /* 
-		Add a child selector this css declaration to target only 
-		<p> elements that are children of the <footer> 
-		*/
-    footer>p {
-        color: silver;
-    }
+td {
+    border: none;
+    padding: 8px;
+    text-align: center;
+}
 
-    /* add purple color to h3 inside the unorder list*/
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-    ul li h3 {
-        color: purple;
-    }
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
 
-    /* media query: tables and larger screens (700 and above)*/
-    @media screen and(min-width:768px) {
+}
 
-        /*header*/
-        nav {
-            display: block;
-            position: relative;
-            box-shadow: none;
-            width: fit-content;
-            padding-right: 1rem;
-        }
+.bestnobisworld {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
 
-    }
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
+.bestnobisworld img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
-    td {
-        border: none;
-        padding: 8px;
-        text-align: center;
-    }
+.bestnobisworld p {
+    color: #333;
+    /* Set your desired text color */
+    line-height: 1.8;
+    align-items: center;
+    display: flex;
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+}
 
+h1 {
+    font-family: oswald, sans-serif;
+    font-weight: 700;
+    /* Bold */
+}
 
-    .container {
-        max-width: 1200px;
-        margin: 20px auto;
-        overflow: hidden;
-
-    }
-
-    .bestnobisworld {
-        float: left;
-        width: 50%;
-        padding: 20px;
-        box-sizing: border-box;
-
-    }
-
-    .bestnobisworld img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .bestnobisworld p {
-        color: #333;
-        /* Set your desired text color */
-        line-height: 1.8;
-        align-items: center;
-        display: flex;
-
-    }
-
-    h1 {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        /* Bold */
-    }
-
-    p {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        /* Regular */
-    }
+p {
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+    /* Regular */
+}
