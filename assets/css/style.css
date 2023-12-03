@@ -1,273 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
+   body {
+       margin: 0;
+       padding: 0;
+       font-family: 'Arial', sans-serif;
+       background-color: #f8f8f8;
+       color: #333;
+   }
 
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-    text-decoration: none;
-}
+   header {
+       background-color: #333;
+       color: white;
+       padding: 15px;
+       text-align: center;
+   }
 
-body {
-    font-family: lato, sans-serif;
-    font-weight: 300;
-    background-color: whitesmoke;
-    color: #3a3a3a;
-    overflow: auto;
+   #logo {
+       margin: 0;
+       font-size: 24px;
+   }
 
-}
+   nav {
+       margin-top: 15px;
+   }
 
-/* heading and company logo*/
-h1,
-h2 {
-    font-family: oswald, sans-serif;
-    /* set h1,h2 to uppercase*/
-    text-transform: uppercase;
-    /* set letter spacing*/
-    letter-spacing: 5px;
-    color: rgb(165, 75, 42);
-    text-align: center;
-}
+   #nav-menu {
+       list-style-type: none;
+       padding: 0;
+       display: flex;
+       justify-content: center;
+   }
 
-/* style logo*/
-#logo {
-    float: left;
-    /* add font size to logo*/
-    font-size: 250%;
-}
+   #nav-menu li {
+       margin: 0 15px;
+   }
 
-/* style Navigation links*/
-#nav-menu {
-    font-size: 110%;
-    letter-spacing: 5px;
-}
+   #nav-menu a {
+       text-decoration: none;
+       color: white;
+       font-weight: bold;
+       font-size: 16px;
+   }
 
-/* set a matching line height for nav-menu and logo*/
-#nav-menu,
-#logo {
-    line-height: 75px;
-}
+   #main-content {
+       padding: 40px 20px;
+   }
 
-/* style lists to float to the right*/
-#nav-menu li {
-    float: right;
-    /* Remove bullet points from the list*/
-    list-style-type: none;
-    /* give space between the list items*/
-    margin-right: 15px;
-}
+   .bestnobisworld {
+       background-color: #fff;
+       padding: 20px;
+       margin-bottom: 30px;
+       border-radius: 10px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
 
-/* styling the <a> */
-#nav-menu a {
-    text-decoration: none;
-    color: rgb(165, 75, 42);
+   #nobis-image img {
+       max-width: 100%;
+       border-radius: 10px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
 
-}
+   h2,
+   h3 {
+       color: #333;
+   }
 
-#nav-menu a: {
-    border-bottom: solid #3a3a3a;
-}
+   p {
+       line-height: 1.6;
+       color: #555;
+   }
 
-.active {
-    border-bottom: solid #3a3a3a;
-}
+   table {
+       width: 100%;
+       border-collapse: collapse;
+       margin-top: 20px;
+   }
 
-/*style nobis image*/
-#nobis-image {
-    height: 300px;
-    width: 100%;
-}
+   .grid-item {
+       padding: 20px;
+       border-radius: 10px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       margin-bottom: 20px;
+   }
 
-/* style cover-text*/
-#cover-text,
-#cover-text h2 {
-    color: #fff;
+   .grid-item img {
+       max-width: 100%;
+       border-radius: 10px;
+   }
 
-}
+   footer {
+       background-color: #333;
+       color: white;
+       text-align: center;
+       padding: 20px;
+       position: relative;
+       margin-top: 30px;
+   }
 
-#cover-text {
-    font-size: 125%;
-    font-family: oswald, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    width: 300px;
-    height: 200px;
-    padding-top: 38px;
-    padding-left: 15px;
-    background-color: red;
+   .social-sites {
+       list-style-type: none;
+       padding: 0;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 15px;
+   }
 
-    bottom: 35px;
-    right: 150px;
-    position: absolute;
-}
+   .social-sites li {
+       margin: 0 10px;
+   }
 
-header {
-    color: rgb(165, 75, 42);
-    padding: 0 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-direction: row;
-    position: relative;
-    top: 20%;
-    z-index: 99;
-    width: 100%;
-    ;
-    box-shadow: 0 2px 2px;
-    color: black
-}
+   .social-sites a {
+       text-decoration: none;
+       color: white;
+       font-size: 18px;
+   }
 
-p {
-    font-family: oswald, sans-serif;
-    font-weight: 300;
-    font-size: 110%;
-    display: flex;
-}
-
-/* add display: block; to Display the links as block elements which makes the whole link area clickable*/
-li a {
-    display: block;
-    background-color: #dddddd;
-}
-
-/* Keek left the navigation links and add a border to the navigation bar.*/
-
-li {
-    text-align: left;
-    border-bottom: 1px solid #555;
-    text-decoration: none;
-}
-
-li:last-child {
-    border-bottom: none;
-}
-
-/* Add an "active" class to the current link to let the user know which page he/she is on:*/
-li a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-
-/* Creat a horizontal navigation bar using float for the <li> elements, and specify a layout for the navigation links:*/
-
-
-li a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-
-}
-
-section>p {
-    color: chocolate;
-}
-
-/* Change the link color on hover */
-a:hover {
-    text-decoration: none;
-    color: rgb(106, 68, 30);
-    display: flex;
-}
-
-
-
-footer {
-    height: 150px;
-    position: relative;
-
-
-}
-
-.social-sites {
-    text-align: center;
-}
-
-.social-sites>li {
-    display: inline;
-}
-
-.social-sites i {
-    font-size: 160%;
-    margin: 1%;
-    padding: 5%;
-    color: chocolate;
-}
-
-
-/* media query: tables and larger screens (700 and above)*/
-@media screen and(min-width:768px) {
-
-    /*header*/
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
-
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-td {
-    border: none;
-    padding: 8px;
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    overflow: hidden;
-
-}
-
-.bestnobisworld {
-    float: left;
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
-
-}
-
-.bestnobisworld img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.bestnobisworld p {
-    color: #333;
-    /* Set your desired text color */
-    line-height: 1.8;
-    align-items: center;
-    display: flex;
-
-}
-
-h1 {
-    font-family: oswald, sans-serif;
-    font-weight: 700;
-    /* Bold */
-}
-
-p {
-    font-family: 'lato', sans-serif;
-    font-weight: 300;
-    /* Regular */
-}
+   footer p {
+       margin: 0;
+       font-size: 14px;
+   }
