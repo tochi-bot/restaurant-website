@@ -1,38 +1,73 @@
 <!-- Main content -->
 <main>
-  <section id="signup"></section>
+  <section id="signup">
+    <form
+      id="sign-up-form"
+      method="post"
+      action="https://formdump.codeinstitute.net"
+    >
+      <h2>Sign Up</h2>
+      <label for="first_name">First Name:</label>
+      <input
+        type="text"
+        id="first_name"
+        name="first_name"
+        class="text_input"
+        required
+      />
+      <br />
+      <label for="last_name">last Name:</label>
+      <input
+        type="text"
+        id="last_name"
+        name="last_name"
+        class="text_input"
+        required
+      />
+      <br />
+      <label for="email_address">Email Address:</label>
+      <input
+        type="email"
+        id="email_address"
+        name="email_address"
+        class="text_input"
+        required
+      />
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="text_input"
+        required
+      />
+      <br />
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+    </form>
+    <div class="radio-buttons">
+      <div>
+        <label for="Member">Membership</label>
+        <input
+          type="radio"
+          name="member"
+          id="Member"
+          value="Membership"
+          required
+          checked
+        />
+      </div>
+      <div>
+        <label for="member-vip">VIP Membership</label>
+        <input type="radio" name="member id=" vip-member" value="VIP Membership"
+        required>
+      </div>
+      <div>
+        <label for="both">Both</label>
+        <input type="radio" name="member" id="both" value="both" required />
+      </div>
+      <button type="submit" class="signup-button">Sign Up</button>
+    </div>
+  </section>
 </main>
-<form id="sign-up-form" method="post" action="https://formdump.codeinstitute.net">
-  <h2>Sign Up</h2>
-  <label for="first_name">First Name:</label>
-  <input type="text" id="first_name" name="first_name" class="text_input" required />
-  <br>
-  <label for="last_name">last Name:</label>
-  <input type="text" id="last_name" name="last_name" class="text_input" required/>
-  <br>
-  <label for="email_address">Email Address:</label>
-  <input type="email" id="email_address" name="email_address" class="text_input" required/>
-  <br />
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" class="text_input" required/>
-  <br>
-  <label for="phone">Phone Number:</label>
-  <input type="tel" id="phone" name="phone" required />
-
-  <button type="submit" class="signup-button">Sign Up</button>
-</form>
-        <div class="radio-buttons">
-            <div>
-                <label for="Member">Membership</label>
-                <input type="radio" name="member" id="Member" value="Membership" required checked>
-            </div>
-            <div>
-                <label for="member-vip">VIP Membership/label>
-                <input type="radio" name="member id="vip-member" value="VIP Membership" required>
-            </div>
-            <div>
-                <label for="both">Both</label>
-                <input type="radio" name="member" id="both" value="both" required>
-            </div>
-        </div>
-
