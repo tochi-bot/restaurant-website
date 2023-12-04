@@ -1,39 +1,37 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# BestNobisWorld Restaurant Website
 
-Welcome,
+Welcome to the README file for the BestNobisWorld Restaurant Website. This document provides an overview of the website's structure, features, and instructions for developers or contributors.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+- Introduction: #Introduction
+- Features: #features
+- Folder Structure: (folder-structure)
 
-## Codeanywhere Reminders
+## Introduction
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The BestNobisWorld Restaurant Website was designed to provide an immersive online experience for users, offering information about the restaurant's menu, reservations, and sign up. The website aims to  engage visitors or users in exploring what makes BestNobisWorld exceptional.
 
-`python3 -m http.server`
+## Features
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+1. **Mobile Responsiveness:** The website is optimized for a seamless experience across various devices, ensuring accessibility and functionality on desktops, tablets, and smartphones.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+2. **Intuitive home and sig-up Navigations:** A user-friendly interface with a well-organized navigation menu facilitates easy access to essential information.
 
-`http_server`
+3 **Visually Appealing Design:** The website showcases high-quality images that capture the restaurant's interior, dishes, and  delivering a visually appealing and immersive experience.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+4. **Menu Showcase:** The menu section features enticing visuals, detailed dish descriptions, and interactive elements to enhance the presentation of the website innovative offerings.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+7. **Contact Information and Location:** Clear and prominent display of contact information, including phone numbers, email addresses.
 
-To log into the Heroku toolbelt CLI:
+8. **Social Media Integration:** Users can connect with the restaurant on various social media platforms
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## ScreenShots of how the website look like on different devices
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Folder Structure
 
----
-
-Happy coding!
+- **css:** Contains stylesheets for styling the website.
+- **images:** Stores high-quality images used throughout the website.
+- **index.html:** The main HTML file that serves as the entry point for the website.
