@@ -29,11 +29,21 @@ The BestNobisWorld Restaurant Website was designed to provide an immersive onlin
 8. **Social Media Integration:** Users can connect with the restaurant on various social media platforms
 
 ## ScreenShots of how the website look like on different devices
+How my website appear's on ipad Pro
 <img src="Pad-Pro.png">
+How my website appear's on Iphone 14 Pro
 <img src="Phone-14-Pro-Max.png">
+How my website appear's on Samsung Galaxy
 <img src="Samsung-Galaxy.png">
+How my website appear's on code Institute formdump
 <img src="formdump.png">
 ## Folder Structure
+
+##Testing Validation
+.HTML
+Some errors was returned when passsing through the official W3C HTML validator.
+.CSS
+No errors were found when passing through W3C CSS validator
 
 - **css:** Contains stylesheets for styling the website.
 - **images:** Stores high-quality images used throughout the website.
