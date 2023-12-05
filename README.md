@@ -54,4 +54,10 @@ No errors were found when passing through W3C CSS validator
 Testing and Debugging: Thoroughly testing and debugging code to identify and fix issues was time-consuming , difficult but crucial. Learning different testing methodologies and using debugging tools wasn't easy but was part of the development process.
   Designing a  respnsive website that looks good and functions well on different devices and screen sizes was very challenging
   Code anywhere IDE was very slow loading, there by placing me on a time bomb.
+# CREDITS
+
+ ## Content
+  . The code to make the social media was taken from CL Love running Project and the course module
   
+## Media
+.The images in the header and body was taken from <https://gencraft.com/plans> and Picture/Images website 
