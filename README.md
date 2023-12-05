@@ -38,3 +38,8 @@ The BestNobisWorld Restaurant Website was designed to provide an immersive onlin
 - **css:** Contains stylesheets for styling the website.
 - **images:** Stores high-quality images used throughout the website.
 - **index.html:** The main HTML file that serves as the entry point for the website.
+## challenges Faced 
+Testing and Debugging: Thoroughly testing and debugging code to identify and fix issues was time-consuming , difficult but crucial. Learning different testing methodologies and using debugging tools wasn't easy but was part of the development process.
+  Designing a  respnsive website that looks good and functions well on different devices and screen sizes was very challenging
+  Code anywhere IDE was very slow loading, there by placing me on a time bomb.
+  
