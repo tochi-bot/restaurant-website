@@ -29,7 +29,10 @@ The BestNobisWorld Restaurant Website was designed to provide an immersive onlin
 8. **Social Media Integration:** Users can connect with the restaurant on various social media platforms
 
 ## ScreenShots of how the website look like on different devices
-
+<img src="Pad-Pro.png">
+<img src="Phone-14-Pro-Max.png">
+<img src="Samsung-Galaxy.png">
+<img src="formdump.png">
 ## Folder Structure
 
 - **css:** Contains stylesheets for styling the website.
