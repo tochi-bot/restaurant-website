@@ -41,9 +41,11 @@ How my website appear's on code Institute formdump
 
 ##Testing Validation
 .HTML
-Some errors was returned when passsing through the official W3C HTML validator.
+Some errors were returned when passsing through the official W3C HTML validator.
 .CSS
 No errors were found when passing through W3C CSS validator
+## Accessibility Score
+<img src="Accessibility-score.png">
 
 - **css:** Contains stylesheets for styling the website.
 - **images:** Stores high-quality images used throughout the website.
