@@ -1,4 +1,4 @@
-/* Reset and General Styles */
+/*  General Styles */
 body {
     margin: 0;
     padding: 0;
@@ -16,6 +16,7 @@ header {
     padding: 15px;
     text-align: center;
 }
+
 /* Logo Styles */
 #logo {
     margin: 0;
@@ -52,18 +53,42 @@ nav {
 }
 
 /* Section Styles */
+/* Add this CSS to your existing stylesheet */
+
+#main-content {
+    position: relative;
+    overflow: hidden;
+}
+
 .bestnobisworld {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: whitesmoke;
+    position: relative;
+}
+
+#nobis-image {
+    width: 100%; /* Make the image take the full width of its container */
 }
 
 #nobis-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make the image take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove default inline display */
+}
+
+#cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: white;
+    /* Set the text color to white (assuming it's displayed on top of an image) */
+}
+
+#cover-text>h3 {
+    color: white;
+    font-size: 1.5em;
 }
 
 h2,
@@ -94,9 +119,11 @@ table {
 
 .grid-item img {
     max-width: 100%;
+    height: auto;
     border-radius: 10px;
+    display: block; /* Remove any extra space below the image */
+    margin: 0 auto; /* Center the image within its container */
 }
-
 /* Footer Styles */
 footer {
     background-color: #333;
