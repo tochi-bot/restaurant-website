@@ -6,6 +6,7 @@ body {
     background-color: whitesmoke;
     color: black;
     font-size: 1.5em;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 
 }
 
@@ -50,15 +51,12 @@ nav {
 /* Main Content Styles */
 #main-content {
     padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Section Styles */
 /* Add this CSS to your existing stylesheet */
-
-#main-content {
-    position: relative;
-    overflow: hidden;
-}
 
 .bestnobisworld {
     background-color: whitesmoke;
@@ -82,8 +80,7 @@ nav {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
-    color: white;
-    /* Set the text color to white (assuming it's displayed on top of an image) */
+    color: white; /* Set the text color to white to displayed on top of an image */
 }
 
 #cover-text>h3 {
