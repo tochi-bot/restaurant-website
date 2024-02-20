@@ -1,3 +1,8 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
 /*  General Styles */
 body {
     margin: 0;
@@ -7,6 +12,7 @@ body {
     color: black;
     font-size: 1.5em;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    line-height: 1.5;
 
 }
 
@@ -22,6 +28,7 @@ header {
 #logo {
     margin: 0;
     font-size: 24px;
+    color: #ffffff;
     flex-grow: 1; /* Allow the logo to grow within its container */
 }
 
