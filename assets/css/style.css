@@ -162,4 +162,16 @@ footer {
 footer p {
     margin: 0;
     font-size: 1.5em;
+    color: white;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .menu-container .grid-item {
+        flex: 0 0 50%;
+    }
 }
