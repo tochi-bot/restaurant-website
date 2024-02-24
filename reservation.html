@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for search engines -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title for search engines -->
+    <title>Restaurant Food Reservation</title>
+    <!-- Stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <section>
+        <header>
+            <!-- Logo and navigation links -->
+            <a href="index.html">
+                <h1 id="logo">BestNobisWorld Restaurant</h1>
+            </a>
+            <ul id="nav-menu">
+                <!-- Navigation links inside the header -->
+                <li>
+                    <a href="sign-up.html" aria-label="Join Us by signing up (link opens in a new tab)">Signup</a>
+                </li>
+                <li>
+                    <a href="index.html" aria-label="Go to the top of the page">Home</a>
+                </li>
+            </ul>
+        </header>
+    </section>
+
+    <div class="container">
+        <!-- Reservation Form Section -->
+        <h2>Reservation Form</h2>
+        <form id="reservation_handler" method="post" action="https://formdump.codeinstitute.net">
+            <!-- Form fields -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" min="1" required>
+            <!-- Submit button -->
+            <input type="submit" value="Make Reservation">
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Social Media Links -->
+        <span>Find us on:</span>
+        <ul class="social-sites">
+            <!-- Social media links -->
+            <li>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)"> Twitter</a>
+                <!-- Twitter link -->
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Find us on Youtube (link opens in a new tab)">Youtube</a>
+                <!-- Youtube link -->
+            </li>
+        </ul>
+        <!-- Copyright Information -->
+        <p> Copyright &copy; 2023 BestNobisWorld Restaurant</p>
+    </footer>
+</body>
+</html>
