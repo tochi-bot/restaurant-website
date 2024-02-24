@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <!-- Stylesheet -->
+    <title>Food Menu Orders</title>
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
+    <!--Header-->
     <section>
         <header>
-            <!-- Logo and navigation -->
             <a href="index.html">
                 <h1 id="logo">BestNobisWorld Restaurant</h1>
             </a>
-            <!-- Navigation menu -->
             <nav>
                 <ul id="nav-menu">
-                    <!-- Navigation links -->
+                    <!-- Navigation links inside the header -->
                     <li>
                         <a href="foodmenu.html" aria-label="Go to the top of the page" class="active">Food Menu Orders</a>
                     </li>
+        
                     <li>
                         <a href="reservation.html" aria-label="Join Us by making reservation (link opens in a new tab)" class="active">Reservation</a>
                     </li>
+
                     <li>
                         <a href="sign-up.html" aria-label="Join Us by signing up (link opens in a new tab)" class="active">Signup</a>
                     </li>
                     <li>
-                        <a href="contact.html" aria-label="Join Us by contacting us (link opens in a new tab)" class="active">Contact Us</a>
+                        <a href="contact.html" aria-label="Join Us by contacting u (link opens in a new tab)" class="active">Contact Us</a>
                     </li>
+                    
                 </ul>
             </nav>
         </header>
     </section>
-
-    <!-- Contact Form Section -->
-    <div class="container_contact">
-        <form id="form_contact" action="https://formdump.codeinstitute.net" method="post">
-            <!-- Form heading -->
-            <h2>Contact Us</h2><br>
-            <!-- Form fields -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <!-- Submit button -->
-            <input type="submit" value="Send">
-        </form>
+    <div class="menu">
+        <h1>Menu</h1>
+        <ul>
+            <li>
+                <span class="item-name">Burger</span>
+                <span class="item-price">$8.99</span>
+            </li>
+            <li>
+                <span class="item-name">Pizza</span>
+                <span class="item-price">$10.99</span>
+            </li>
+            <li>
+                <span class="item-name">Salad</span>
+                <span class="item-price">$6.99</span>
+            </li>
+        </ul>
     </div>
 
-    <!-- Footer Section -->
-    <footer>
+    <div class="order-form">
+        <h2>Place Your Order</h2>
+        <form id="food_menu_orders" method="post" action="https://formdump.codeinstitute.net">
+            <label for="item">Select Item:</label>
+            <select id="item" name="item">
+                <option value="burger">Burger</option>
+                <option value="pizza">Pizza</option>
+                <option value="salad">Salad</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button type="submit">Add to Cart</button>
+        </form>
+    </div>
+     <!-- Footer Section -->
+     <footer>
         <!-- Social Media Links -->
         <span>Find us on:</span>
         <ul class="social-sites">
+            <!-- Social media links -->
             <li>
                 <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
             </li>
@@ -69,11 +81,11 @@
             </li>
             <li>
                 <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)"> Twitter</a>
-                <!--Add a copy right for Bestnobisworld-->
+                <!-- Twitter link -->
             </li>
             <li>
                 <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Find us on Youtube (link opens in a new tab)">Youtube</a>
-                <!--Add a copy right for Bestnobisworld-->
+                <!-- Youtube link -->
             </li>
         </ul>
         <!-- Copyright Information -->

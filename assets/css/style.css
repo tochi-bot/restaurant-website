@@ -212,6 +212,75 @@ footer p {
     color: white;
 }
 
+
+.menu {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.menu h1 {
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.item-name {
+    display: inline-block;
+    width: 150px;
+}
+
+.item-price {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+.order-form {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.order-form h2 {
+    text-align: center;
+}
+
+.order-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form label {
+    margin-bottom: 5px;
+}
+
+.order-form select,
+.order-form input[type="number"],
+.order-form button {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.order-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: #45a049;
+}
+
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     header {
