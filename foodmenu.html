@@ -36,32 +36,71 @@
         </header>
     </section>
     <div class="menu">
-        <h1>Menu</h1>
-        <ul>
-            <li>
-                <span class="item-name">Burger</span>
-                <span class="item-price">$8.99</span>
-            </li>
-            <li>
-                <span class="item-name">Pizza</span>
-                <span class="item-price">$10.99</span>
-            </li>
-            <li>
-                <span class="item-name">Salad</span>
-                <span class="item-price">$6.99</span>
-            </li>
-        </ul>
+        <div>
+            <a href="#" onclick="submitForm()">
+                <h2 class="title">Bruschetta</h2>
+                <figure><img src="./assets/images/Bruschetta%200.png" alt="Bruschetta" class="photo"></figure>
+                <span class="item-price">Price: $8.99</span>
+                <p>Italian-style bruschetta with tomatoes, garlic, and basil.</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" onclick="submitForm()">
+                <h2 class="title">Hummus Platter</h2>
+                <figure><img src="./assets/images/Hummus%20Platter%200.png" alt="hummus-platter" class="photo">
+                </figure>
+                <span class="hummus-platter-price">Price: $8.99</span>
+                <p>Classic hummus served with pita bread and vegetables.</p>
+            </a>
+        </div>
+       <div>
+            <a href="#" onclick="submitForm()">
+                <h2 class="title">Pad Thai</h2>
+                <figure><img src="./assets/images/Pad%20Thai%200.png" alt="pad-thai" class="photo"></figure>
+                <span class="pad-thai-price">Price: $8.99</span>
+                <p>A traditional Thai dish with stir-fried noodles and vegetables.</p>
+            </a>
+       </div>
+       <div>
+            <a href="#" onclick="submitForm()">
+                <h2 class="title">Chicken Parmesan</h2>
+                <figure><img src="./assets/images/Chicken%20Parmesa%200.png" alt="chicken-parmesan"
+                        class="photo"></figure>
+                <p>Italian-style breaded chicken topped with marinara sauce and melted cheese.</p>
+                
+            </a>
+       </div>
+       <div>
+            <a href="#" onclick="submitForm()">
+                <h2 class="title">Vegetable Curry</h2>
+                <figure><img src="./assets/images/Vegetable%20Curry%200.png" alt="vegetable curry" class="photo"></figure>
+                <span class="Vegetable-curry-price">Price: $8.99</span>
+                <p>Indian-style vegetable curry served with basmati rice.</p>
+            </a>
+       </div>
+       <div>
+            <a href="#" onclick="submitForm()">
+                <h2 class="title">Spring Rolls</h2>
+                <figure><img src="./assets/images/Spring%20Rolls%200.png" alt="spring-rolls" class="photo"></figure>
+                <span class="spring-rolls-price">Price: $8.99</span>
+                <p>Delicious spring rolls served with a sweet chili sauce.</p>
+            </a>
+       </div>
     </div>
 
     <div class="order-form">
         <h2>Place Your Order</h2>
-        <form id="food_menu_orders" method="post" action="https://formdump.codeinstitute.net">
+        <form id="addToCartForm" method="post" action="https://formdump.codeinstitute.net">
             <label for="item">Select Item:</label>
             <select id="item" name="item">
-                <option value="burger">Burger</option>
-                <option value="pizza">Pizza</option>
-                <option value="salad">Salad</option>
+                <option value="Bruschetta">Bruschetta</option>
+                <option value="hummus-platter">Hummus Platter</option>
+                <option value="pad-thai">Pad Thai</option>
+                <option value="chicken-parmesan">Chicken Parmesan</option>
+                <option value="vegetable-curry">Vegetable Curry</option>
+                <option value="spring-rolls">Spring Rolls</option>
             </select>
+            
             <label for="quantity">Quantity:</label>
             <input type="number" id="quantity" name="quantity" min="1" value="1">
             <button type="submit">Add to Cart</button>
@@ -91,5 +130,11 @@
         <!-- Copyright Information -->
         <p> Copyright &copy; 2023 BestNobisWorld Restaurant</p>
     </footer>
+
+    <script>
+        function submitForm() {
+            document.getElementById('addToCartForm').submit();
+        }
+    </script>
 </body>
 </html>

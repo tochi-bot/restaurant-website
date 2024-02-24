@@ -1,136 +1,66 @@
-body, h1, h2, h3, p, ul, li {
+/* Resetting default margins and paddings for commonly used elements */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
 
-/*  General Styles */
+/* General Styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Arial", sans-serif;
-    background-color: whitesmoke;
-    color: black;
-    font-size: 1.5em;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    font-family: "Arial", sans-serif; /* Set default font family */
+    background-color: whitesmoke; /* Set background color */
+    color: black; /* Set text color */
+    font-size: 1.5em; /* Set default font size */
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    line-height: 1.5;
-
+    line-height: 1.5; /* Set line height */
 }
 
 /* Header Styles */
 header {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
+    background-color: #333; /* Set background color */
+    color: white; /* Set text color */
+    padding: 15px; /* Add padding */
+    text-align: center; /* Center align text */
 }
 
 /* Logo Styles */
 #logo {
-    margin: 0;
-    font-size: 24px;
-    color: #ffffff;
+    margin: 0; /* Reset margin */
+    font-size: 24px; /* Set font size */
+    color: #ffffff; /* Set text color */
     flex-grow: 1; /* Allow the logo to grow within its container */
 }
 
 /* Navigation Styles */
 nav {
-    margin-top: 15px;
-    list-style-type: none;
+    margin-top: 15px; /* Add top margin */
+    list-style-type: none; /* Remove default list styles */
 }
 
 #nav-menu {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Reset padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items */
 }
 
 #nav-menu li {
-    margin: 0 15px;
+    margin: 0 15px; /* Add margin between menu items */
 }
 
 #nav-menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5em;
+    text-decoration: none; /* Remove default text decoration */
+    color: white; /* Set text color */
+    font-weight: bold; /* Set font weight */
+    font-size: 1.5em; /* Set font size */
 }
-
-/* Main Content Styles */
-#main-content {
-    padding: 40px 20px;
-    position: relative;
-    overflow: hidden;
-}
-ul{list-style-type: none;}
-
-/* Section Styles */
-/* Add this CSS to your existing stylesheet */
-
-.bestnobisworld {
-    background-color: whitesmoke;
-    position: relative;
-}
-
-#nobis-image {
-    width: 100%; /* Make the image take the full width of its container */
-}
-
-#nobis-image img {
-    width: 100%; /* Make the image take the full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove default inline display */
-}
-
-#cover-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-    color: white; /* Set the text color to white to displayed on top of an image */
-}
-
-#cover-text>h3 {
-    color: white;
-    font-size: 1.5em;
-}
-
-h2,
-h3 {
-    color: #333;
-}
-
-/* Paragraph Styles */
-p {
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-/* Grid Styles */
-.grid-item {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.grid-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block; /* Remove any extra space below the image */
-    margin: 0 auto; /* Center the image within its container */
-}
-
 .container {
     width: 100%;
     margin: 0 auto;
@@ -177,117 +107,127 @@ input[type="submit"]:hover {
 input[type="submit"]:focus {
     outline: none;
 }
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    margin-top: 30px;
+
+/* Main Content Styles */
+#main-content {
+    padding: 40px 20px; /* Add padding */
+    position: relative; /* Set position relative for child elements with absolute positioning */
+    overflow: hidden; /* Hide overflowing content */
 }
 
-/* Social Sites Styles */
-.social-sites {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+/* Paragraph Styles */
+p {
+    line-height: 1.6; /* Set line height */
+    color: #555; /* Set text color */
 }
 
-.social-sites li {
-    margin: 0 10px;
-}
-
-.social-sites a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1.5em;
-    color: white;
-}
-
-
+/* Grid Styles */
 .menu {
-    width: 300px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    padding: 10px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Set grid columns */
+    grid-template-rows: repeat(3, auto); /* Set grid rows to create a 3-row layout */
+    grid-gap: 20px; /* Set gap between grid items */
+    justify-content: center; /* Center align grid items */
+    width: auto; /* Automatically adjust width */
+    margin: 20px auto; /* Center align grid */
+    border: 1px solid #ccc; /* Add border */
+    padding: 10px; /* Add padding */
 }
 
 .menu h1 {
-    text-align: center;
-}
-
-.menu ul {
-    list-style-type: none;
-    padding: 0;
+    text-align: center; /* Center align heading */
+    grid-column: 1 / -1; /* Span all columns */
 }
 
 .menu li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Add bottom margin */
 }
 
 .item-name {
-    display: inline-block;
-    width: 150px;
+    display: inline-block; /* Set display to inline-block */
+    width: 150px; /* Set width */
 }
 
 .item-price {
-    display: inline-block;
-    width: 100px;
-    text-align: right;
+    display: inline-block; /* Set display to inline-block */
+    width: 100px; /* Set width */
+    text-align: right; /* Right align text */
 }
 
 .order-form {
-    width: 300px;
-    margin: 20px auto;
+    width: auto; /* Automatically adjust width */
+    margin: 20px auto; /* Center align */
 }
 
 .order-form h2 {
-    text-align: center;
+    text-align: center; /* Center align heading */
 }
 
 .order-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.order-form label {
-    margin-bottom: 5px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Set flex direction to column */
 }
 
 .order-form select,
 .order-form input[type="number"],
 .order-form button {
-    margin-bottom: 10px;
-    padding: 5px;
+    margin-bottom: 10px; /* Add bottom margin */
+    padding: 5px; /* Add padding */
 }
 
 .order-form button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+    background-color: #4CAF50; /* Set background color */
+    color: white; /* Set text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add pointer cursor */
 }
 
 .order-form button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Change background color on hover */
 }
 
+/* Footer Styles */
+footer {
+    background-color: #333; /* Set background color */
+    color: white; /* Set text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add padding */
+    position: relative; /* Set position relative for child elements with absolute positioning */
+    margin-top: 30px; /* Add top margin */
+}
+
+/* Social Sites Styles */
+.social-sites {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Reset padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items */
+    margin-bottom: 15px; /* Add bottom margin */
+}
+
+.social-sites li {
+    margin: 0 10px; /* Add margin between social media links */
+}
+
+.social-sites a {
+    text-decoration: none; /* Remove default text decoration */
+    color: white; /* Set text color */
+    font-size: 1.5em; /* Set font size */
+}
+
+footer p {
+    margin: 0; /* Reset margin */
+    font-size: 1.5em; /* Set font size */
+    color: white; /* Set text color */
+}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     header {
-        padding: 10px;
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 
     .menu-container .grid-item {
-        flex: 0 0 50%;
+        flex: 0 0 50%; /* Adjust flex basis for smaller screens */
     }
 }
