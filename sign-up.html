@@ -1,212 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BestNobisWorld Restaurant Ltd</title>
-    <style>
-      body {
-        font-family: "Arial", sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        word-spacing: 4%;
-      }
-
-      header {
-        background-color: #333;
-        color: white;
-        padding: 15px;
-        text-align: center;
-      }
-
-      #logo {
-        margin: 0;
-        font-size: 24px;
-      }
-
-      nav {
-        margin-top: 15px;
-      }
-
-      form {
-        background-color: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        border-radius: 8px;
-        width: 600px;
-      }
-
-      label {
-        display: block;
-        margin-bottom: 8px;
-      }
-
-      input {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 16px;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-
-      button {
-        background-color: #4caf50;
-        color: #fff;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-      }
-
-      button:hover {
-        background-color: #45a049;
-      }
-
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        position: relative;
-        margin-top: 30px;
-      }
-
-      .social-sites {
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-      }
-
-      .social-sites li {
-        margin: 0 10px;
-      }
-
-      .social-sites a {
-        text-decoration: none;
-        color: white;
-        font-size: 18px;
-      }
-
-      footer p {
-        margin: 0;
-        font-size: 14px;
-      }
-    </style>
-  </head>
-
-  <body>
+    <!-- Stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
     <section>
-      <section>
         <header>
-          <a href="index.html">
-            <h1 id="logo">BestNobisWorld Restaurant</h1>
-          </a>
+            <a href="index.html">
+                <h1 id="logo">BestNobisWorld Restaurant</h1>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <!-- Navigation links inside the header -->
+                    <li>
+                        <a href="index.html" aria-label="Go to the top of the page" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="reservation.html" aria-label="Join Us by making reservation (link opens in a new tab)">Reservation</a>
+                    </li>
+                    <li>
+                        <a href="sign-up.html" aria-label="Join Us by signing up (link opens in a new tab)">Signup</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" aria-label="Join Us by contacting us (link opens in a new tab)">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-      </section>
+    </section>
 
-      <form
-        id="sign-up-form"
-        method="post"
-        action="https://formdump.codeinstitute.net"
-      >
-        <h2>Sign Up</h2>
-        <label for="first_name">First Name:</label>
-        <input
-          type="text"
-          id="first_name"
-          name="first_name"
-          class="text_input"
-          required
-        />
-        <br />
-        <label for="last_name">last Name:</label>
-        <input
-          type="text"
-          id="last_name"
-          name="last_name"
-          class="text_input"
-          required
-        />
-        <br />
-        <label for="email_address">Email Address:</label>
-        <input
-          type="email"
-          id="email_address"
-          name="email_address"
-          class="text_input"
-          required
-        />
-        <br />
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          class="text_input"
-          required
-        />
-        <br />
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required />
+    <!-- Main Section - Sign Up Form -->
+    <section>
+        <form id="sign-up-form" method="post" action="https://formdump.codeinstitute.net">
+            <h2>Sign Up</h2>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" class="text_input" required><br>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" class="text_input" required><br>
+            <label for="email_address">Email Address:</label>
+            <input type="email" id="email_address" name="email_address" class="text_input" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="text_input" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
 
-        <button type="submit">Sign Up</button>
-      </form>
-
-      <footer id="footer-form">
-        <!--Add a social meadia links-->
+    <!-- Footer Section -->
+    <footer id="footer-form">
+        <!-- Social Media Links -->
         <span>Find us on:</span>
         <ul class="social-sites">
-          <li>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener"
-              aria-label="Find us on Facebook (link opens in a new tab)"
-              >Facebook</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener"
-              aria-label="Find us on Instagram (link opens in a new tab)"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener"
-              aria-label="Find us on Twitter (link opens in a new tab)"
-            >
-              Twitter</a
-            >
-            <!--Add a copy right for Bestnobisworld-->
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com"
-              target="_blank"
-              rel="noopener"
-              aria-label="Find us on Youtube (link opens in a new tab)"
-              >Youtube</a
-            >
-            <!--Add a copy right for Bestnobisworld-->
-          </li>
+            <li>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Find us on Youtube (link opens in a new tab)">Youtube</a>
+            </li>
         </ul>
-
         <p>Copyright &copy; 2023 BestNobisWorld Restaurant</p>
-      </footer>
-    </section>
-  </body>
+    </footer>
+</body>
 </html>

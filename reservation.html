@@ -20,20 +20,28 @@
             <ul id="nav-menu">
                 <!-- Navigation links inside the header -->
                 <li>
-                    <a href="sign-up.html" aria-label="Join Us by signing up (link opens in a new tab)">Signup</a>
-                </li>
-                <li>
                     <a href="index.html" aria-label="Go to the top of the page">Home</a>
+                </li>
+                
+                <li>
+                    <a href="reservation.html" aria-label="Join Us by making reservation (link opens in a new tab)" class="active">Reservation</a>
+                </li>
+
+                <li>
+                    <a href="sign-up.html" aria-label="Join Us by signing up (link opens in a new tab)">Signup</a>
                 </li>
             </ul>
         </header>
     </section>
 
     <div class="container">
+        <div id="nobis-image">
+            <figure><img src="./assets/images/restaurant%20exte%200.png" alt="Restaurant Interior"></figure>
+       </div>
         <!-- Reservation Form Section -->
-        <h2>Reservation Form</h2>
         <form id="reservation_handler" method="post" action="https://formdump.codeinstitute.net">
             <!-- Form fields -->
+            <h2>Reservation Form</h2><br>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>

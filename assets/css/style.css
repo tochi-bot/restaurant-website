@@ -130,6 +130,53 @@ table {
     display: block; /* Remove any extra space below the image */
     margin: 0 auto; /* Center the image within its container */
 }
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="password"],
+textarea
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea{width: 70%;
+height: 50%;}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
 /* Footer Styles */
 footer {
     background-color: #333;
