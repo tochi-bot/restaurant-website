@@ -61,6 +61,24 @@ nav {
     font-weight: bold; /* Set font weight */
     font-size: 1.5em; /* Set font size */
 }
+
+
+#nobis-image {
+    width: 100%; /* Make the div cover the width of its container */
+  }
+  
+  #nobis-image figure {
+    margin: 0; /* Remove default margins */
+  }
+  
+  #nobis-image img {
+    width: 100%; /* Make the image fill the entire width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space reserved for descenders */
+  }
+   strong {
+        font-weight: bold;
+      }
 .container {
     width: 100%;
     margin: 0 auto;
