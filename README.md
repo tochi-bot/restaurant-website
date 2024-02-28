@@ -1,18 +1,21 @@
 <https://tochi-bot-restaurant-web-ojy9ws0jzj.us2.codeanyapp.com/#/workspaces/restaurant-website>
 
-# BestNobisWorld Restaurant Website
+#### BestNobisWorld Restaurant Website
 
-Welcome to the README file for the BestNobisWorld Restaurant Website. This document provides an overview of the website's structure, features, and instructions for developers or contributors.
+###Introduction:
+![am I responsive (2)](https://github.com/tochi-bot/restaurant-website/assets/77632001/f2991283-f993-4804-8823-48b793059449)
 
-## Table of Contents
+Welcome to the BestNobisWorld Restaurant Ltd project! This project aims to showcase the online presence and offerings of BestNobisWorld Restaurant, a premier dining establishment located in the heart of London. In this README file, you'll find a comprehensive overview of the project, its objectives, and how to navigate through its various features.
 
-- Introduction: #Introduction
-- Features: #features
-- Folder Structure: (folder-structure)
+##Aims of the Project:
 
-## Introduction
+Online Accessibility: The primary aim of this project was to provide online accessibility to BestNobisWorld Restaurant. Through the website, users can explore the restaurant's menu, make reservations, sign up for membership, and contact the restaurant for inquiries or feedback.
 
-The BestNobisWorld Restaurant Website was designed to provide an immersive online experience for users, offering information about the restaurant's menu, reservations, and sign up. The website aims to  engage visitors or users in exploring what makes BestNobisWorld exceptional.
+Enhanced User Experience: We aim to enhance the user experience by offering an intuitive and visually appealing interface. Users can easily navigate through the website's different sections to find the information they need and perform desired actions such as placing orders or making reservations.
+
+Information Dissemination: The project facilitates the dissemination of essential information about BestNobisWorld Restaurant, including details about its menu offerings, opening hours, location, and contact information. This ensures that users have access to all necessary information when planning their dining experience.
+
+Feedback Mechanism: The contact form included in the project serves as a feedback mechanism, allowing users to communicate with the restaurant regarding inquiries, suggestions, or concerns. This enables the restaurant to engage with its customers effectively and address their needs to maintain a high level of customer satisfaction.
 
 ## Features
 
@@ -29,27 +32,20 @@ The BestNobisWorld Restaurant Website was designed to provide an immersive onlin
 7. **Contact Information and Location:** Clear and prominent display of contact information, including phone numbers, email addresses.
 
 8. **Social Media Integration:** Users can connect with the restaurant on various social media platforms
-
-## ScreenShots of how the website look like on different devices
-How my website appear's on ipad Pro
-<img src="Pad-Pro.png">
-How my website appear's on Iphone 14 Pro
-<img src="Phone-14-Pro-Max.png">
-How my website appear's on Samsung Galaxy
-<img src="Samsung-Galaxy.png">
-How my website appear's on code Institute formdump
-<img src="formdump.png">
-### Folder Structure 
+ 
 ### Food Menu Orders
 
 Browse Menu: Start by browsing the restaurant's menu to explore the available dishes and items. Users can typically find the menu on the restaurant's homepage  " Food Menu Orders" section. Take your time to review the options and choose the items you'd like to order.
 
 ![Screenshot 2024-02-27 200156](https://github.com/tochi-bot/restaurant-website/assets/77632001/398719de-bc98-4cf7-b7b7-87c407539d6d)
 
+![add-to-cart-output](https://github.com/tochi-bot/restaurant-website/assets/77632001/95b7187a-01fc-4bd4-bb4e-5f96a331b1c8)
+
 Select Items: Once you've decided on the items you want to order, click on the respective "Add to Cart" button next to each item. This action adds the selected item to your virtual shopping cart, similar to shopping online for other goods.
 #### Reservation Form
 Access the Reservation Form: Visit the restaurant's website and locate the reservation form. Users can find it on the homepage reservations page.
 ![Reservation](https://github.com/tochi-bot/restaurant-website/assets/77632001/70aec638-1e49-43de-bbb2-167c3c177f63)
+![reservation-output](https://github.com/tochi-bot/restaurant-website/assets/77632001/59abca9f-b4ce-4a0f-b8f1-39c418007c74)
 
 Look for a button or link that says "Reservation".
 Provide your full name, email, and phone number. This information is used by the restaurant to confirm your reservation and communicate any updates or changes if necessary.
@@ -63,6 +59,8 @@ table size and seating arrangements to accommodate your group.
 ### The Sign Up Form
 Access the Signup Form: Visit the restaurant's website and locate the signup form. Typically, you can find it on the homepage signup page.
 ![signup](https://github.com/tochi-bot/restaurant-website/assets/77632001/312c18a4-bd14-45d5-ad8b-28e313ec72bc)
+![signup-output](https://github.com/tochi-bot/restaurant-website/assets/77632001/2b1a77e7-6675-4003-89cc-4c6c4ecedba2)
+
 
 Provide Personal Information: Begin by filling out the required fields on the signup form. This includes providing your full name, email address,
 password, and  phone number. Ensure that the information you provide is accurate and up-to-date.
@@ -75,6 +73,8 @@ Then, click the "Sign up" button to send your signup information to the restaura
 ### Contact Us
 Locate the Contact Page: Navigate to the restaurant's website and look for the "Contact Us" page. This is where users will find the contact form information.
 ![contact_us](https://github.com/tochi-bot/restaurant-website/assets/77632001/a000a4c5-12a0-4138-bdf1-3ff9a5148be1)
+
+![contact-us#output](https://github.com/tochi-bot/restaurant-website/assets/77632001/70d5ef13-eec0-4541-8a09-a7dea4c972a4)
 
 Fill Out Your Information: Start by filling out your name and email address in the designated fields. Providing accurate contact information ensures that 
 the restaurant can respond to your inquiry or feedback promptly.
